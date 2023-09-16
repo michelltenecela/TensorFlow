@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="391dp"
+        android:layout_height="380dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/classified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:text="El personaje seleccionado es:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#C30000"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        android:id="@+id/result"
+        android:layout_below="@+id/classified"
+        />
+
+    <TextView
+        android:id="@+id/confidencesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="Coincidencias:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:id="@+id/confidence"
+        android:layout_below="@+id/confidencesText"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_below="@+id/confidencesText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="107dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="104dp"
+            android:onClick="onClickCamara"
+            android:text="Cámara"
+            android:textAllCaps="false"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="44dp"
+            android:onClick="onClickGaleria"
+            android:text="Galería"
+            android:textAllCaps="false"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
